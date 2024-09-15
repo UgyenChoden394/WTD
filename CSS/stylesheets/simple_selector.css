@@ -1,0 +1,10 @@
+* {
+    color: blue;
+}
+p.center {
+    text-decoration: underline dashed black;
+}
+h3, p, h5 {
+    text-align: center;
+    background-color: aqua;
+}
