@@ -1,0 +1,7 @@
+div> p {
+    background-color: blueviolet;
+}
+
+section + h5 {
+    background-color: aqua;
+}

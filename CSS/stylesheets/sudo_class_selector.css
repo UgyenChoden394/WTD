@@ -1,0 +1,16 @@
+div {
+    background-color: blue;
+    text-align: center;
+    padding: 30px;
+}
+div:hover {
+    background-color: blueviolet;
+    
+}
+input:focus {
+    background-color: plum;
+    
+}
+p:first-child {
+    color: yellow;
+  }
