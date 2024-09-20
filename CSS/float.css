@@ -1,0 +1,14 @@
+img {
+    height: 100px;
+    width: 100px;
+    float: right;
+}
+
+#div1 {
+    background-color: aquamarine;
+    float: left;
+}
+#div2 {
+    background-color: palevioletred;
+    clear: left;
+}
