@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen Management System</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS -->
+</head>
+<body>
+    <header>
+        <h1>Canteen Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="login">
+        <h2>User Login</h2>
+        <form action="login.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section id="register">
+        <h2>User Registration</h2>
+        <form action="register.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="type">User Type:</label>
+            <select id="type" name="type">
+                <option value="staff">Staff</option>
+                <option value="student">Student</option>
+                <option value="others">Others</option>
+            </select>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <div class="menu-item">
+            <h3>Item Name</h3>
+            <p>Price: $10</p>
+            <button class="add-quantity">+</button>
+            <input type="number" class="quantity" value="1" min="1" readonly>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <h3>Another Item</h3>
+            <p>Price: $15</p>
+            <button class="add-quantity">+</button>
+            <input type="number" class="quantity" value="1" min="1" readonly>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <!-- Add more menu items similarly -->
+    </section>
+
+    <section id="orders">
+        <h2>Your Orders</h2>
+        <ul id="order-list">
+            <!-- This is where ordered items will appear -->
+        </ul>
+        <button id="checkout">Checkout</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Canteen Management System</p>
+    </footer>
+
+    <script src="scripts.js"></script> <!-- Link to your scripts -->
+</body>
+</html>
