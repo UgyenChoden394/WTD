@@ -10,31 +10,14 @@
     <div class="container text-center p-5 mt-5 bg-secondary">
         <h3 class="mb-5">Conditional Statements</h3>
         <p>Click the button below to give your age to find out if you are eligible to vote!</p>
-        <button class="btn border btn-outline-dark" onclick="checkEligibility()">Click Me</button>
+        <button class="btn border btn-outline-dark" onclick="checkEligibility()">Click Here</button>
         <p id="p1" class="p-5 m-5 bg-light"></p>
     </div>
     
-    <script>
-    function checkEligibility() {
-       
-        let age = prompt("Please enter your age:");
-        age = Number(age);
-        let message;
-        if (isNaN(age) || age < 0) {
-            message = "The age is invalid if it is a negative number.";
-        } else if (age >= 18) {
-            message = "User is eligible to vote.";
-        } else {
-            message = "User is not eligible to vote because the age is less than 18.";
-        }
-    
-       
-        document.getElementById("p1").innerText = message;
-    }
-    </script>
 
     <script src="/html/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="/html/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/html/JavaScript/scripts/homework.js"></script>
 
 
     

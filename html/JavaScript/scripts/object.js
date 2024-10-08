@@ -12,8 +12,8 @@ dog.age = 5;
 console.log(dog);
 
 const person = {
-    fname: "tashi",
-    lname: "choden",
+    fname: "Ugyen",
+    lname: "Choden",
     age: 21,
     fullname: function() {
         return this.fname + " " + this.lname
